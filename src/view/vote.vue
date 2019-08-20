@@ -17,14 +17,14 @@
                    <div class="vote_l">
                         <span class="inx">{{index+1}}</span>
                         <img :src="item.pj_logo" alt="">
-                        <div class="names"> 
+                        <div class="names">
                             <span class="abbreviation">{{item.short_pj_name}}</span>
                             <p class="full_name">
                                 <em>{{item.pj_name}}</em>
                                 <router-link :to="{path:'/voteDetail',query:{id:item.thisid,index:index+1}}" tag="a">{{$t('vote.detail')}}</router-link>
                             </p>
                             <p class="ft12" v-if="item.is_air_drop == 1">{{$t('vote.jiangli')}}：{{$t('vote.fen')}} {{item.airNumber}} {{item.short_pj_name}}</p>
-                        </div>   
+                        </div>
                    </div>
                    <div class="vote_c">
                         <p class="man"><strong>{{item.support_people}}</strong> {{$t('vote.sup_people')}}</p>
@@ -51,7 +51,7 @@
 			this.getList();
 		},
 		mounted(){
-			
+
 		},
 		methods: {
            getList(){
@@ -97,7 +97,7 @@
 </script>
 <style lang="scss" scoped>
     .banner{
-        background: url('../assets/images/vote_bg.jpg') no-repeat;
+        background: url('../assets/images/fdnvote_bg.png') no-repeat;
         width: 100%;
         height: 400px;
         background-size: 100% 100%;
@@ -208,7 +208,7 @@
                     width: 30%;
                     height: 100%;
                     display: flex;
-                    align-items: center;  
+                    align-items: center;
                     .man,.ticket{
                         width: 50%;
                         font-size: 13px;
@@ -228,7 +228,7 @@
                     height: 100%;
                     display: flex;
                     justify-content: center;
-                    align-items: center; 
+                    align-items: center;
                     .share{
                         height: 40px;
                         width: 100px;
@@ -239,7 +239,7 @@
                          border-radius: 4px;
                          border:1px solid #ccc;
                          cursor: pointer;
-                    } 
+                    }
                 }
             }
             li:last-child{

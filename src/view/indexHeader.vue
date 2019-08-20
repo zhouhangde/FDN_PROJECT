@@ -5,7 +5,7 @@
 			<div class="header-l flex ft14">
 				<div class="logo flex alcenter mr20" @click="goHome">
 <!--					<img src="../assets/images/hxex_logo.svg" alt style="width:150px;height: 38px;margin-left: -20px;">-->
-					<img src="../assets/images/hxex_logo.png" alt style="width:100px;height: 30px;margin-left: -10px;">
+					<img src="../assets/images/fdnlogo_white.png" alt style="width:100px;height: 30px;margin-left: -10px;">
 
 				</div>
 				<!-- <span class="mr60 titles" @click="goHome">一带一路</span> -->
@@ -29,7 +29,7 @@
 				<!-- <router-link v-if="token" to="/advice">{{$t('header.complaint')}}</router-link>
                 <div v-else @click="goLogin()">{{$t('header.complaint')}}</div> -->
 				<router-link to="/passCard">{{$t('header.pro')}}</router-link>
-				<router-link to="/crowFinding">TREX PEAK</router-link>
+				<router-link to="/crowFinding">FDN PEAK</router-link>
 				<!-- <div @click="noopen">存币宝</div>
                 <div @click="noopen">投票上币</div> -->
 				<router-link to="/depositCoin">{{$t('header.cun')}}</router-link>

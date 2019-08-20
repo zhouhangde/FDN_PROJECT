@@ -4,7 +4,7 @@
     <div>
       <!-- <el-carousel trigger="click">
       <el-carousel-item>-->
-      <img class="w100" src="../assets/images/pass_banner02.png">
+      <img class="w100" src="../assets/images/fdnsearch.png">
       <!-- </el-carousel-item>
       </el-carousel>-->
     </div>
@@ -153,7 +153,7 @@ export default {
       this.getList(val-1)
     },
     next(val){
-      this.getList(val-1) 
+      this.getList(val-1)
     },
     //搜索
     search(){
