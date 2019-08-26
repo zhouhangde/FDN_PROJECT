@@ -126,7 +126,7 @@
 				}
 			}
 			var $this =this
-			// $this.buy_sell($this.legal_id, $this.currency_id);
+			$this.buy_sell($this.legal_id, $this.currency_id);
 			$this.connect();  
            
 			
@@ -196,7 +196,7 @@
 			connect() {
 				var that = this;
 				// 打开一个 web socket
-				var ws = new WebSocket("wss://ws.hxex.com/ws");
+				var ws = new WebSocket("wss://ws.bitfdn.com/ws");
 				ws.onopen = function() {
 					var sendData={socket_type:that.currency_id+'/'+that.legal_id+'_lever',subscribed:1} // Web Socket 已连接上，使用 send() 方法发送数据
 					sendData = JSON.stringify(sendData)
