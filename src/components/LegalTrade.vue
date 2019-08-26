@@ -131,7 +131,7 @@
 						console.log('随机的买家theIndex',theIndex)
 						$this.theBuyData = res.data.message.data[theIndex]
 						console.log('随机的买家',$this.theBuyData)
-						$this.buyMin = '最小买入'+  $this.theBuyData.limitation.min  //最小买入
+						$this.buyMin = '最小买入'+  $this.theBuyData.min_number  //最小买入
 					}else{
                         $this.theBuyData = 'none'
 					}
@@ -153,7 +153,7 @@
 						console.log('随机的卖出theIndex',theIndex)
 						$this.theSellerData = res.data.message.data[theIndex]
 						console.log('随机的卖家',$this.theSellerData)
-						$this.sellerMin = '最小卖出'+ $this.theSellerData.limitation.min  //最小卖出
+						$this.sellerMin = '最小卖出'+ $this.theSellerData.min_number  //最小卖出
 					}else{
                         $this.theSellerData = 'none'
 					}
