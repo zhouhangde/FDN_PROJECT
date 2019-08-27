@@ -5,7 +5,7 @@
 			<div class="header-l flex ft14">
 				<div class="logo flex alcenter mr20" @click="goHome">
 <!--					<img src="../assets/images/hxex_logo.svg" alt style="width:150px;height: 38px;margin-left: -20px;">-->
-					<img src="../assets/images/fdnlogo_white.png" alt style="width:100px;height: 30px;margin-left: -10px;">
+					<img src="../assets/images/smaex_logo.png" alt style="width:100px;height: 30px;margin-left: -10px;">
 
 				</div>
 				<!-- <span class="mr60 titles" @click="goHome">一带一路</span> -->

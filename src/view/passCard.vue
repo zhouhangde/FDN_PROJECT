@@ -4,7 +4,7 @@
     <div>
       <!-- <el-carousel trigger="click">
       <el-carousel-item>-->
-      <img class="w100" src="../assets/images/fdnsearch.png">
+      <img class="w100" src="../assets/images/smaex_search.png">
       <!-- </el-carousel-item>
       </el-carousel>-->
     </div>

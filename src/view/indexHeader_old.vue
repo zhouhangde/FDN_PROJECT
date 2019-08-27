@@ -17,8 +17,8 @@
       <router-link to="/myLegalShops" v-if="isShow">{{$t('header.shop')}}</router-link>
       <!-- <router-link to="/finance" v-if="token">{{$t('header.assets')}}</router-link>
       <div v-else @click="goLogin()">{{$t('header.assets')}}</div> -->
-     
-      
+
+
        <!-- <router-link to="/helpcenter">{{$t('header.help')}}</router-link> -->
       <!-- <router-link v-if="token" to="/advice">{{$t('header.complaint')}}</router-link>
       <div v-else @click="goLogin()">{{$t('header.complaint')}}</div> -->
@@ -51,7 +51,7 @@
       </div>-->
     </div>
     <div class="header-r flex">
-      
+
       <div v-if="!account_number.length" class="flex">
         <router-link to="/components/login"><span class="login_btn">{{$t('header.in')}}</span></router-link>
         <router-link to="/components/register"><span class="login_btn">{{$t('header.up')}}</span></router-link>
@@ -61,7 +61,7 @@
           <div>资产</div>
           <div class="links">
             <router-link to='/finance'>交易</router-link>
-           
+
           </div>
         </div>-->
         <!-- <div class="order">
@@ -75,12 +75,12 @@
           <div class="account_number"><span>UID:{{user_id}} </span><span class="ml5 mr5">|</span> hi, {{account_number}}<img class="ml5" :src="vip0"></div>
           <div class="links blue_bg">
             <router-link to="/userCenter">{{$t('header.center')}}</router-link>
-            <!-- <router-link to="/userSetting" v-if="token">{{$t('header.setting')}}</router-link>   
+            <!-- <router-link to="/userSetting" v-if="token">{{$t('header.setting')}}</router-link>
             <div v-else @click="goLogin()">{{$t('header.setting')}}</div> -->
             <div @click="signOut">{{$t('header.out')}}</div>
           </div>
         </div>
-        
+
       </div>
       <!-- <div class="flex notice" @mouseover="showNot = true" @mouseleave="showNot = false">
         <img src="../assets/images/not.png" @mouseover="getNotice();" alt="">
@@ -112,7 +112,7 @@
       <!-- <div class=" theme flex">
           <img src="../assets/images/dark.png"  @click="$changeTheme('light')" alt="">
           <img src="../assets/images/light.png" @click="$changeTheme('dark')" alt="">
-          
+
       </div> -->
     </div>
   </div>
@@ -200,7 +200,7 @@ export default {
   methods: {
     set_lang(img,text,lang){
       this.lang_img = img;
-      this.lang_text = text; 
+      this.lang_text = text;
       $('.lang_box').css('display','none');
       var l = window.localStorage.getItem("locale") || "zh";
       if (l == lang) {
@@ -212,16 +212,16 @@ export default {
       }
     },
     over_lang(){
-      $('.lang_box').css('display','block')  
+      $('.lang_box').css('display','block')
     },
     out_lang(){
       $('.lang_box').css('display','none')
     },
-    candy(){ 
-       layer.msg(this.$t('lay.notopen'))   
+    candy(){
+       layer.msg(this.$t('lay.notopen'))
     },
-    noopen(){ 
-       layer.msg(this.$t('lay.notopen'))   
+    noopen(){
+       layer.msg(this.$t('lay.notopen'))
     },
     getNotice(){
       this.$http({
@@ -323,7 +323,7 @@ export default {
   }
   >p{
     position: absolute;
-    
+
     width: 220px;
     border-radius: 4px;
     box-shadow: 0 2px 3px #ccc;
@@ -407,7 +407,7 @@ export default {
   a:hover,
   .router-link-active {
     color: #fff;
-    
+
   }
   .header-l .router-link-active {
     border-bottom: 2px solid #0FD5FF;
