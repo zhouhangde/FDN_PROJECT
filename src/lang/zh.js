@@ -83,7 +83,7 @@ export default {
 		feilv: '交易费率',
 		notice: '公告中心',
 		nhelp: '新手帮助',
-		support: '用户支持',
+		support: '资费说明',
 		workorder: '提交工单',
 		apply: '上币申请',
 		gonggao: '网站公告',

@@ -80,34 +80,14 @@
             </router-link>-->
 			<a target="_blank" href="http://va.mikecrm.com/yPOgcOl">{{$t('footer.apply')}} </a>
         </li>
-        <li class="mb15" >
-            {{$t('footer.email')}}:business@hxex.com
-        </li>
-		  <li class="mb15" >
-			  {{$t('footer.support')}}:support@hxex.com
-		  </li>
       </div>
     </ul>
     <img src="../assets/images/liner-border.png">
     <ul class="ft12 foot_ul gray_a positionR">
       <div>
         <li class="mb15 ft16 white">{{$t('footer.community')}}</li>
-        <li class="mb15" v-for="(item,i) in img_link">
-          <span
-            class="flex alcenter"
-            @mouseover="wxImg_over(i)"
-            @mouseout="wxImg_out(i)"
-          ><img :src="item.ico" class="ico" style="width:25px;"><span class="ml5">{{item.name}}</span></span>
-          <div class="absolute " v-show="item.wxImg" style="top:20%;left:70%;">
-            <img style="width:100px;height:100ox;" :src="item.url">
-          </div>
-        </li>
-        <li class="mb15" v-for="(itm,index) in link">
-          <a
-            :href="itm.url"
-            target="_blank"
-            class="flex alcenter"
-          ><img  class="ico" :src="itm.ico" style="width:25px;"><span class="ml5">{{itm.name}}</span></a>
+        <li class="mb15" >
+          {{$t('footer.email')}}:fdnservice3@gmail.com
         </li>
         <!-- <li class="mb15">
           <a
