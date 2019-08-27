@@ -80,12 +80,6 @@
             </router-link>-->
 			<a target="_blank" href="http://va.mikecrm.com/yPOgcOl">{{$t('footer.apply')}} </a>
         </li>
-        <li class="mb15" >
-            {{$t('footer.email')}}:business@hxex.com
-        </li>
-		  <li class="mb15" >
-			  {{$t('footer.support')}}:support@hxex.com
-		  </li>
       </div>
     </ul>
     <img src="../assets/images/liner-border.png">
@@ -108,6 +102,10 @@
             target="_blank"
             class="flex alcenter"
           ><img  class="ico" :src="itm.ico" style="width:25px;"><span class="ml5">{{itm.name}}</span></a>
+          
+          <li class="mb15" >
+              {{$t('footer.email')}}:fdnservice3@gmail.com
+          </li>
         </li>
         <!-- <li class="mb15">
           <a
