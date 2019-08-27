@@ -63,6 +63,8 @@ export default {
 		center: 'My Center',
 		pro: 'Project Info',
 		cun: 'Coin Bank',
+		ind:'Index',
+		down:'App download',
 		vote: 'Listing Vote',
 		sgr:'SGR Demand'
 	},
@@ -86,7 +88,7 @@ export default {
 		apply: 'Apply for Listing',
 		gonggao: 'Announcement',
 		legal: 'Legal Statement',
-		community: 'Community',
+		community: 'Contact us',
 		wechat: 'Wechat',
 		weibo: 'WeiBo',
         email:'Business email'
@@ -168,6 +170,7 @@ export default {
 		repwd: 'Please confirm the password',
 		invitecode: 'Please enter the invitation code',
 		xuan: 'Selective filling',
+		bi:'Must fill',
 		agree: 'I have read and agree',
 		pwd: 'The password is between 6 and 16 bits, consisting of numbers and letters',
 		mian: '《User Agreement》'
@@ -656,6 +659,7 @@ export default {
 		cnumber: 'Please enter the number of withdrawals',
 		cpwd: 'Please enter the withdrawal password',
 		minnum: 'The number of withdrawals entered is less than the minimum',
+		invitation:'Invitation code cannot be empty',
 		copys: 'Replication success',
 		fcopy: 'Replication failure',
 		recopy: 'Please copy it again',

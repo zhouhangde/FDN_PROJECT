@@ -59,6 +59,8 @@ export default {
 		his: "歴史的依頼",
 		code: "招待コード",
 		shop: "私の店です",
+		ind:'最初のページ',
+		down:'App ダウンロード',
 		out: '登録をログアウトする。',
 		orders: "受注",
 		center: '個人センター',
@@ -87,7 +89,7 @@ export default {
 		apply: 'お札を入れる',
 		gonggao: '网站公告',
 		legal: '公式サイト',
-		community: 'コミュニティ群',
+		community: '連絡します',
 		wechat: 'WeChat',
 		weibo: '微博',
 		email:'ビジネスメールアドレス'
@@ -169,6 +171,7 @@ export default {
 		repwd: 'パスワードを確認してください',
 		invitecode: '招待コードを入力してください',
 		xuan: '記入する',
+		bi:'必要とする',
 		agree: '私はすでに読んで同意しました',
 		pwd: 'パスワードは6-16桁の間にあります。数字とアルファベットからなります',
 		mian: '「ユーザプロトコル」'
@@ -573,6 +576,7 @@ export default {
 		cnumber: '引き出した貨幣の数量を入力してください',
 		cpwd: 'チップのパスワードを入力してください。',
 		minnum: '入力された払戻し数量が最小値より小さい場合',
+		invitation:'招待コードは空ではありません',
 		copys: 'コピー成功',
 		fcopy: 'コピーに失敗',
 		recopy: 'コピーし直してください',

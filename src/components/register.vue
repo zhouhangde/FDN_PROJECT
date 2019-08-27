@@ -57,7 +57,7 @@
                 </div>
                 <div class="invite-box">
                     <div class="tip">{{$t('register.invitecode')}}</div>
-                    <input type="text" :placeholder="$t('register.xuan')" v-model="invite" class="invite-input" style="width:400px;">
+                    <input type="text" :placeholder="$t('register.bi')" v-model="invite" class="invite-input" style="width:400px;">
                 </div>
                 <p class="flex alcenter ft12">
                   <input id="agree" class="aggre" v-model="isCheck" @click="check" type="checkbox" /><label for="agree">{{$t('register.agree')}} <router-link to="/aggrement" class="link_text">{{$t('register.mian')}}</router-link></label>
@@ -114,7 +114,7 @@ export default {
   //           next();
   //       }
   //   }
-    
+
   // },
   created() {
     //获取所有省份
@@ -138,14 +138,14 @@ export default {
       if (/ipad|iphone|midp|rv:1.2.3.4|ucweb|android|windows ce|windows mobile/.test(sUserAgent)) {
         console.log("移动端登陆")
           //跳转移动端页面
-          
+
           if(window.location.href.indexOf("?") != -1){
             var can = this.getCaption(window.location.href,1)
             window.location.href="https://www.hxex.com/register.html" + '?'+can;
           }else{
             window.location.href="https://www.hxex.com/register.html" ;
           }
-          
+
       } else {
         console.log("电脑登陆")
           //跳转pc端页面
@@ -185,7 +185,7 @@ export default {
     //   if (id !== "") {
     //     pId = "?parent_id=" + id;
     //   }
-      
+
 
     //   this.$http({
     //     url: "/api/region" + pId,
@@ -227,7 +227,7 @@ export default {
       // this.province = { id: "", name: "请选择省" };
       // this.city = { id: "", name: "请选择市" };
       // this.district = { id: "", name: "请选择区" };
-      
+
       clearInterval(this.timer);
       var codeBtn = document.querySelector(".code-btn");
       codeBtn.disabled = true;
@@ -274,7 +274,7 @@ export default {
         }
         time--;
       }, 1000);
-      
+
       let data = { number: this.account,type:'regist' };
       if(url == 'send/phone'){
          data.front = country[this.areaCode].area_code
@@ -368,7 +368,10 @@ export default {
       } else if (this.pwd !== this.repwd) {
         layer.msg(that.$t('lay.twopwd'));
         return;
-      } 
+      } else if(this.invite == ""){
+		  layer.msg(that.$t('lay.invitation'));
+		  return;
+	  }
 
       var data = {};
       // data.province_id = this.province.id;
@@ -402,7 +405,7 @@ export default {
         method: "post",
         headers: {
             'Content-Type': 'application/x-www-form-urlencoded;charset=utf-8',
-        }    
+        }
       }).then(res => {
         layer.close(loa);
         layer.msg(res.data.message);

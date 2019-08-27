@@ -56,15 +56,15 @@
 						<span>{{$t('uc.safe')}}</span>
 					</router-link>
 				</div>
-				<div class="router_link">
+				<!--<div class="router_link">-->
 
-					<router-link to="/invite" exact class="block">
-						<!-- <div @click="noopen"> -->
-						<img src="../assets/images/yaoqing.png" alt="">
-						<span>{{$t('uc.invitate')}}</span>
-						<!-- </div> -->
-					</router-link>
-				</div>
+					<!--<router-link to="/invite" exact class="block">-->
+						<!--&lt;!&ndash; <div @click="noopen"> &ndash;&gt;-->
+						<!--<img src="../assets/images/yaoqing.png" alt="">-->
+						<!--<span>{{$t('uc.invitate')}}</span>-->
+						<!--&lt;!&ndash; </div> &ndash;&gt;-->
+					<!--</router-link>-->
+				<!--</div>-->
 				<div class="router_link">
 
 					<router-link to="/userCenter/caiwu" exact class="block">

@@ -63,6 +63,8 @@ export default {
 		center: '个人中心',
 		pro: '项目公示',
 		cun: '存币宝',
+		ind:'首页',
+		down:'App 下载',
 		vote: '投票上币',
 		sgr:'SGR返利'
 	},
@@ -86,7 +88,7 @@ export default {
 		apply: '上币申请',
 		gonggao: '网站公告',
 		legal: '法律声明',
-		community: '社群',
+		community: '联系我们',
 		wechat: '微信',
 		weibo: '微博',
 		email:'商务邮箱',
@@ -168,6 +170,7 @@ export default {
 		repwd: '请确认密码',
 		invitecode: '请输入邀请码',
 		xuan: '选填',
+		bi:'必填',
 		agree: '我已阅读并同意',
 		pwd: '密码在6-16位之间,由数字和字母组成',
 		mian: '《用户协议》'
@@ -594,6 +597,7 @@ export default {
 		mprice: '请输入价格',
 		mnum: '请输入数量',
 		minnum: '请输入最小数量',
+		invitation:'邀请码不能为空',
 		lessnum: '最小数量不能小于',
 		morenum: '数量不能超出',
 		notnum: '数量不能大于总数量'

@@ -63,6 +63,8 @@ export default {
 		orders: "주문서",
 		center: '개인 센터',
 		pro: '프로젝트 공시',
+		ind:'첫 페이지',
+		down:'App 다운로드',
 		cun: '은행',
 		vote: '투표하다',
 		sgr:'SGR Demand'
@@ -87,7 +89,7 @@ export default {
 		apply: '상환 신청',
 		gonggao: '사이트 공고',
 		legal: '법률 성명',
-		community: '집단',
+		community: '연락 주세요.',
 		wechat: 'Wechat',
 		weibo: 'Weibo',
 		email:'Business email'
@@ -169,6 +171,7 @@ export default {
 		repwd: '비밀번호 확인',
 		invitecode: '초대장 코드 입력',
 		xuan: '고르다',
+		bi:'반드시 메우다',
 		agree: '나는 이미 읽고 동의했다',
 		pwd: '비밀번호는 6 -16위 사이로 숫자와 자모로 구성되어 있다',
 		mian: '《사용자 협의 》'
@@ -657,6 +660,7 @@ export default {
 		cnumber: '토큰을 입력하십시오',
 		cpwd: '지폐 패스워드를 입력해주세요',
 		minnum: '입력된 공제된 수량은 최소 값보다 작습니.',
+		invitation:'초청 코드를 비울 수 없습니다',
 		copys: '복사 성공',
 		fcopy: '복제 실패',
 		recopy: '다시 복사하십시오',

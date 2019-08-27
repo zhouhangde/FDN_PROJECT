@@ -10,6 +10,7 @@
 				</div>
 				<!-- <span class="mr60 titles" @click="goHome">一带一路</span> -->
 				<!--				<router-link to="/" exact>{{$t('header.home')}}</router-link>-->
+				<router-link to="/" exact>{{$t('header.ind')}}</router-link>
 				<router-link to="/dealCenter">{{$t('header.currency')}}</router-link>
 				<router-link to="/legalTrade">{{$t('header.c2c')}}</router-link>
 				<!-- <div v-else>{{$t('header.c2c')}}</div> -->
@@ -29,11 +30,11 @@
 				<!-- <router-link v-if="token" to="/advice">{{$t('header.complaint')}}</router-link>
                 <div v-else @click="goLogin()">{{$t('header.complaint')}}</div> -->
 				<router-link to="/passCard">{{$t('header.pro')}}</router-link>
-				<router-link to="/crowFinding">FDN PEAK</router-link>
+				<!--<router-link to="/crowFinding">FDN PEAK</router-link>-->
 				<!-- <div @click="noopen">存币宝</div>
                 <div @click="noopen">投票上币</div> -->
-				<router-link to="/depositCoin">{{$t('header.cun')}}</router-link>
-				<router-link to="/vote">{{$t('header.vote')}}</router-link>
+				<!--<router-link to="/depositCoin">{{$t('header.cun')}}</router-link>-->
+				<!--<router-link to="/vote">{{$t('header.vote')}}</router-link>-->
 
 			    <!-- 返利 -->
 				<!-- <router-link to="/sgr" style="display:flex;align-items: center;padding-top: 4px;">{{$t('header.sgr')}}
@@ -99,7 +100,8 @@
 						</el-tooltip>
 					</div>
 					<div style="margin-left: 10px">
-						<a href="https://51gsc.com/app/JJS0"><i class="fa fa-download" aria-hidden="true"></i></a>
+						<!--<a href="https://51gsc.com/app/JJS0"><i class="fa fa-download" aria-hidden="true"></i></a>-->
+						<a href="https://51gsc.com/app/JJS0">{{$t('header.down')}}</a>
 					</div>
 				</div>
 				<!--				登录之后-->
@@ -172,9 +174,9 @@
 											</span>
 
 										</li>
-										<li class="notice_a usr">
-												<div @click=" goUserCenter('/invite')">{{$t('uc.invitate')}}</div>
-										</li>
+										<!--<li class="notice_a usr">-->
+												<!--<div @click=" goUserCenter('/invite')">{{$t('uc.invitate')}}</div>-->
+										<!--</li>-->
 										<li class="notice_a usr">
 												<div @click=" goUserCenter('/userCenter/security')">{{$t('uc.safe')}}</div>
 										</li>
@@ -224,7 +226,8 @@
 					</div>
 					<!--					下载-->
 					<div style="margin-left: 20px">
-						<a href="https://51gsc.com/app/JJS0"><i class="fa fa-download" aria-hidden="true"></i></a>
+						<!--<a href="https://51gsc.com/app/JJS0"><i class="fa fa-download" aria-hidden="true"></i></a>-->
+						<a href="https://51gsc.com/app/JJS0">App 下载</a>
 					</div>
 
 				</div>
