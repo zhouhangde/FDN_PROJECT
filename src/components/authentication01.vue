@@ -82,7 +82,7 @@
           <div class="ml10">
             <p
               class="ft12 line-h2 mb10"
-            >请提供一张您手持证件照的照片，在同张照片中也要包含有“TREX”、日期和您的签名的注释。请确保您的脸部清晰可见，且所有证件详细信息都清楚可读</p>
+            >请提供一张您手持证件照的照片，在同张照片中也要包含有“SMAEX”、日期和您的签名的注释。请确保您的脸部清晰可见，且所有证件详细信息都清楚可读</p>
             <div class="flex">
               <div>
                 <p class="ft12 mb5 flex alcenter s_ico">
@@ -92,7 +92,7 @@
                   <img src="../assets/images/success.png">照片清晰可见
                 </p>
                 <p class="ft12 flex alcenter s_ico">
-                  <img src="../assets/images/success.png">带有[TREX]的文字注释
+                  <img src="../assets/images/success.png">带有[SMAEX]的文字注释
                 </p>
               </div>
               <div class="flex" style="align-items:flex-end;">
@@ -172,7 +172,7 @@
           <span class="ml5">上传资产截图信息</span>
         </p>
         <p class="mb10 ft12">
-          请提供一张您本人的TREX账号的资产明细截图或者照片，图片中包含您的账户名、uid、持仓详情、当前时间。所有信息
+          请提供一张您本人的SMAEX账号的资产明细截图或者照片，图片中包含您的账户名、uid、持仓详情、当前时间。所有信息
           清晰可读。
         </p>
         <el-upload
