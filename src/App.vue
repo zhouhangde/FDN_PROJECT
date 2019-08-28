@@ -7,7 +7,7 @@
 			<div style="display: flex;">
                 <img src="./assets/images/hxex.png" style="width:124px;height:124px"/>
 				<div style="padding: 0 15px;color: #fff;margin-left: 26px;">
-					<p style="font-size: 18px;font-size: 51px;">FDN</p>
+					<p style="font-size: 18px;font-size: 51px;">SMAEX</p>
 					<p style="font-size: 14px;font-size: 39px;">比特币|数字货币交易平台</p>
 				</div> 
 			</div>

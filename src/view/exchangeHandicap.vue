@@ -238,7 +238,7 @@
 				// that.$socket.on("transaction", msg => {
 				//websocket
 				// 打开一个 web socket
-				var ws = new WebSocket("wss://ws.bitfdn.com/ws");
+				var ws = new WebSocket("wss://ws.smaex.io/ws");
 
 				ws.onopen = function () {
 					// Web Socket 已连接上，使用 send() 方法发送数据

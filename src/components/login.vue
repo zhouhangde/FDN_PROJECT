@@ -56,7 +56,7 @@
                     </svg>-->
                   </div>
                   <div class="cell-content">
-                    <p data-v-9f594e28="" class="text">FDN App</p>
+                    <p data-v-9f594e28="" class="text">SMAEX App</p>
                     <p class="text">随时随地 便捷交易</p>
                     <p class="other">扫描二维码下载TREX App</p></div>
                 </div>
