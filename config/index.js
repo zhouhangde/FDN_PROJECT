@@ -16,7 +16,6 @@ module.exports = {
           target: 'https://www.smaex.io/api',//后端接口地址
           // target: 'https://www.hxex.com/api',//后端接口地址
           changeOrigin: true,//是否允许跨越
-          "secure": true,//false为http访问，true为https访问
           pathRewrite: {
               '^/api': '/',//重写,
           }

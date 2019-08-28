@@ -56,7 +56,7 @@
                     </svg>-->
                   </div>
                   <div class="cell-content">
-                    <p data-v-9f594e28="" class="text">SMAEX App</p>
+                    <p data-v-9f594e28="" class="text">TREX App</p>
                     <p class="text">随时随地 便捷交易</p>
                     <p class="other">扫描二维码下载TREX App</p></div>
                 </div>
@@ -100,7 +100,7 @@ export default {
   // },
   created() {
     //console.log(this.$utils);
-    // this.getCodeImg();
+    this.getCodeImg();
     this.account_number = this.$route.query.account_number || "";
     if(!localStorage.getItem('token')){
         this.account_number = localStorage.getItem('accountNum');

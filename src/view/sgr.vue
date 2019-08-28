@@ -6,7 +6,7 @@
     <div class="wrap white">
         <!--头部-->
         <!--<div class="w40 top">
-          <p class="ft28 mb10 big">SMAEX现已开启</p>
+          <p class="ft28 mb10 big">TREX现已开启</p>
           <p class="ft24 tr mb10">SGR Demand 模式</p>
           <p class="tr ft12"><span class="intro ptb5 plr20 curPer"><router-link :to="{path:'/components/noticeDetail', query:{id:341}}"> Demand玩法介绍</router-link></span></p>
         </div>-->

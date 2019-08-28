@@ -724,7 +724,7 @@
 	.theScroll::-webkit-scrollbar-thumb{
 		border-radius: 10px;
 		-webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.2);
-		background: rgba(235, 233, 233,0.2);
+		background: rgba(235, 233, 233, 0.2);
 	}
 
 	.theScroll::-webkit-scrollbar-track{

@@ -254,6 +254,7 @@
 					})
 					var msg = JSON.parse(evt.data);
 					if (msg.type == "transaction") {
+						// console.log('transaction',msg)
 
 						//组件间传值
 						var newPrice = {

@@ -1,4 +1,4 @@
-<template>
+﻿<template>
 
   <div id="index-footer" class="foot flex center around" style="padding:50px 80px;">
   
@@ -35,7 +35,7 @@
     <ul class="ft12 foot_ul gray_a">
       <div>
         <li class="mb15 ft16 white">{{$t('header.help')}}</li>
-        <li class="mb15 curPer"><a href="https://51gsc.com/app/MLid" target="_blank">{{$t('footer.download')}}</a></li>
+        <li class="mb15 curPer"><a href="https://www.pgyer.com/f3F9" target="_blank">{{$t('footer.download')}}</a></li>
         <li class="mb15">
           <!-- <router-link :to="{path:'/components/noticeDetail',query:{id:47}}" class="mr15" tag="span">{{$t('footer.connect')}}</router-link> -->
           <router-link :to="{path:'/noticeHelp'}" tag="span">{{$t('footer.notice')}}</router-link>
@@ -72,24 +72,28 @@
             tag="span"
           >{{$t('footer.workorder')}}</router-link>
         </li>
-        <li class="mb15" >
-          <!--<router-link
+
+        <!--<router-link
             :to="{path:'/currencyApply'}"
             tag="span">
             {{$t('footer.apply')}}
             </router-link>-->
-			<a target="_blank" href="http://va.mikecrm.com/yPOgcOl">{{$t('footer.apply')}} </a>
+        <!-- <li class="mb15" >
+		     	<a target="_blank" href="http://va.mikecrm.com/yPOgcOl">{{$t('footer.apply')}} </a>
+        </li> -->
+
+        <li class="mb15" >
+            {{$t('footer.email')}}:business@taurusex.co
         </li>
+		  <li class="mb15" >
+			  {{$t('footer.support')}}:support@taurusex.co
+		  </li>
       </div>
     </ul>
     <img src="../assets/images/liner-border.png">
     <ul class="ft12 foot_ul gray_a positionR">
       <div>
         <li class="mb15 ft16 white">{{$t('footer.community')}}</li>
-<<<<<<< HEAD
-        <li class="mb15" >
-          {{$t('footer.email')}}:fdnservice3@gmail.com
-=======
         <li class="mb15" v-for="(item,i) in img_link">
           <span
             class="flex alcenter"
@@ -106,11 +110,6 @@
             target="_blank"
             class="flex alcenter"
           ><img  class="ico" :src="itm.ico" style="width:25px;"><span class="ml5">{{itm.name}}</span></a>
-          
-          <li class="mb15" >
-              {{$t('footer.email')}}:fdnservice3@gmail.com
-          </li>
->>>>>>> c6c5a92c20c356cf442e6276484d4eb7d2897b90
         </li>
         <!-- <li class="mb15">
           <a

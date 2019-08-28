@@ -67,7 +67,7 @@
 
 			<div class="notice_box">
 				<div class="notice_list">
-					<span v-for="item in noticeList" :key="item.id" class="list"
+					<span v-for="item in noticeList" :key="item.id" class="fl list"
 						  @click="$router.push({path:'components/noticeDetail',query:{id:item.thisid}})"><a
 						class="notice_a ft12" :data-id='item.id'>{{item.title}}</a></span>
 				</div>
@@ -1279,7 +1279,6 @@
 		margin-top: -1px;
 		background-color: #f6f9fc;
 		position: relative;
-		text-align: center;
 	}
 
 	.notice_box .notice_list {

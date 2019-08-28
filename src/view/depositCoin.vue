@@ -110,7 +110,7 @@ export default {
 </script>
 <style scoped>
    .banner{
-       background: url('../assets/images/fdncunbi_bg.png') no-repeat 50%,linear-gradient(90deg,#161357,#2d5588);
+       background: url('../assets/images/cunbi_bg.png') no-repeat 50%,linear-gradient(90deg,#161357,#2d5588);
        height: 290px;
        position: relative;
    }
