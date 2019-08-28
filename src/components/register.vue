@@ -94,7 +94,7 @@ export default {
       country:country,
       areaCode:0,
       disable:true,
-      isCheck:false,
+      isCheck:true,
       real_name:'',
       card_type:'身份证',
       card_id:''
@@ -231,7 +231,7 @@ export default {
       clearInterval(this.timer);
       var codeBtn = document.querySelector(".code-btn");
       codeBtn.disabled = true;
-      this.isCheck = false;
+      this.isCheck = true;
       codeBtn.innerHTML = that.$t('code');
       ////console.log(codeBtn);
     },
