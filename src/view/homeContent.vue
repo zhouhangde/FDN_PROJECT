@@ -172,7 +172,7 @@
 							<p class="p0"></p>
 							<span>IPhone</span>
 							<div class="codebox tc ft12">
-								<img src="../assets/images/app_old.png" alt="">
+								<img src="../assets/images/app_down.png" alt="">
 								<span>Iphone</span>
 							</div>
 						</li>
@@ -180,7 +180,7 @@
 							<p class="p1"></p>
 							<span>{{$t('home.android')}}</span>
 							<div class="codebox tc ft12">
-								<img src="../assets/images/app_old.png" alt="">
+								<img src="../assets/images/app_down.png" alt="">
 								<span>{{$t('home.android')}}</span>
 							</div>
 						</li>

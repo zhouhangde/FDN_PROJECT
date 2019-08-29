@@ -83,10 +83,10 @@
         </li> -->
 
         <li class="mb15" >
-            {{$t('footer.email')}}:business@taurusex.co
+            {{$t('footer.email')}}:smachain@163.com
         </li>
 		  <li class="mb15" >
-			  {{$t('footer.support')}}:support@taurusex.co
+			  {{$t('footer.support')}}:smachain@163.com
 		  </li>
       </div>
     </ul>

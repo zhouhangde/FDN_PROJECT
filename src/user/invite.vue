@@ -15,32 +15,32 @@
                         </div>
                     </div>
                 </div>
-            <div class="invite_header radius8 bg-part shadows hidden">
-                <div class=" head ft16 flex alcenter center" style="background:#e0f2ff;">
-                    <img src="../assets/images/icon_bd.png" alt="" class="mr10">
-                    <span>{{$t('invite.list')}}</span>
-                </div>
-                <div class="ht80 plr40">
-                    <div class="in_body flex column  ft16 between  ">
-                        <div class="flex alcenter cor1 mt20">
-                            <div class="flex1"><img src="../assets/images/icon_1.png" alt="" class="H34"></div>
-                            <div class="flex1 tc">{{rankList.length>0 && rankList[0].account || ''}}</div>
-                            <div class="flex1 tr">{{$t('invite.commission')}}{{rankList.length>0 && rankList[0].count || ''}}USDT</div>
-                        </div>
-                        <div class="flex alcenter cor1 mt20">
-                            <div class="flex1"><img src="../assets/images/icon_2.png" alt="" class="H34"></div>
-                            <div class="flex1 tc">{{rankList.length>1 && rankList[1].account || ''}}</div>
-                            <div class="flex1 tr">{{$t('invite.commission')}}{{rankList.length>1 && rankList[1].count || ''}}USDT</div>
-                        </div>
-                        <div class="flex alcenter cor1 mt20">
-                            <div class="flex1"><img src="../assets/images/icon_3.png" alt="" class="H34"></div>
-                            <div class="flex1 tc">{{rankList.length>2 && rankList[2].account || ''}}</div>
-                            <div class="flex1 tr">{{$t('invite.commission')}}{{rankList.length>2 && rankList[2].count || ''}}USDT</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <p class="ptb10 mt10 mb10 bgWhite radius4 tc ft14">手续费返佣总额 {{count_inv}}  <span class="ml20">SGR返佣总额 {{count_release}}</span></p>
+            <!--<div class="invite_header radius8 bg-part shadows hidden">-->
+                <!--<div class=" head ft16 flex alcenter center" style="background:#e0f2ff;">-->
+                    <!--<img src="../assets/images/icon_bd.png" alt="" class="mr10">-->
+                    <!--<span>{{$t('invite.list')}}</span>-->
+                <!--</div>-->
+                <!--<div class="ht80 plr40">-->
+                    <!--<div class="in_body flex column  ft16 between  ">-->
+                        <!--<div class="flex  cor1 mt20">-->
+                            <!--<div class="flex1"><img src="../assets/images/icon_1.png" alt="" class="H34"></div>-->
+                            <!--<div class="flex1 tc">{{rankList.length>0 && rankList[0].account || ''}}</div>-->
+                            <!--<div class="flex1 tr">{{$t('invite.commission')}}{{rankList.length>0 && rankList[0].count || ''}}USDT</div>-->
+                        <!--</div>-->
+                        <!--<div class="flex alcenter cor1 mt20">-->
+                            <!--<div class="flex1"><img src="../assets/images/icon_2.png" alt="" class="H34"></div>-->
+                            <!--<div class="flex1 tc">{{rankList.length>1 && rankList[1].account || ''}}</div>-->
+                            <!--<div class="flex1 tr">{{$t('invite.commission')}}{{rankList.length>1 && rankList[1].count || ''}}USDT</div>-->
+                        <!--</div>-->
+                        <!--<div class="flex alcenter cor1 mt20">-->
+                            <!--<div class="flex1"><img src="../assets/images/icon_3.png" alt="" class="H34"></div>-->
+                            <!--<div class="flex1 tc">{{rankList.length>2 && rankList[2].account || ''}}</div>-->
+                            <!--<div class="flex1 tr">{{$t('invite.commission')}}{{rankList.length>2 && rankList[2].count || ''}}USDT</div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</div>-->
+            <!--<p class="ptb10 mt10 mb10 bgWhite radius4 tc ft14">手续费返佣总额 {{count_inv}}  <span class="ml20">SGR返佣总额 {{count_release}}</span></p>-->
             <!--邀请人数、持仓数量--->
                 <div class="flex mb10 between mt20 ft14">
                     <div class="plr10 ptb10 bgWhite w30">
@@ -56,88 +56,88 @@
                         <p>三级总HXB持仓：{{msg.third_balance || '--'}}</p>
                     </div>
                 </div>
-            <div class="bg-part plr20 pt20 pb50 mt20 radius8">
-                <!-- <div class="">
-                    <p class="ft22 cor3">{{$t('invite.link')}}</p>
-                    <div class="mt20 flex alcenter cor2">
-                        <div class="bd_d1 radius4 ptb15 flex alcenter flex1 mr30">
-                            <div class="bdr_d1 flex1 tc">https://www.hxex.one/#/components/register?code={{invite_code}}</div>
-                            <div class="tc  ft16 w25 curPer copy_link" @click="copy_link">{{$t('invite.share')}}</div>
-                        </div>
-                        <div class="w30 bd_d1 radius4 ptb15 flex alcenter">
-                            <div class="bdr_d1 flex1 tc">{{$t('header.code')}}：{{invite_code}}</div>
-                            <div class="tc  ft16 w20 curPer" @click="copy" id="copy">{{$t('account.copy')}}</div>
-                        </div>
-                    </div>
-                </div> -->
-                <div class="">
-                    <p class="ft22 cor3"><span :class="{'black':tab == 1,'bold':tab == 1}" class="curPer" @click="tab = 1">返佣记录</span><span class="ml20 curPer" :class="{'black':tab == 2,'bold':tab == 2}" @click="tab = 2">持仓统计</span></p>
-                    <div class="flex alcenter ft14 mt10">
-                        <span>层级：</span>
-                        <el-select size="mini" v-model="lever" @change="changeLever">
-                            <el-option :value="item.value" :label="item.name" v-for="(item,i) in leverList" :key="i"></el-option>
-                        </el-select>
-                        <span class="mr10" style="margin-left:50px;">用户账号：</span>
-                        <el-input placeholder="用户手机号或邮箱" style="width:350px;" size="mini" @keyup.native="inp" v-model="account" class="input-with-select"><el-button slot="append" icon="el-icon-search"></el-button> </el-input>
-                    </div>
-                    <div class="mt20 ft14" v-if="tab == 1">
-                        <div class="flex alcenter cor2 ft14 bdb_eb pb10">
-                            <!-- <span class="flex1">{{$t('invite.account')}}</span>
-                            <span class="flex1 tc">{{$t('time')}}</span>
-                            <span class="flex1 tr pr30">{{$t('status')}}</span> -->
-                             <span class="flex1">UID</span>
-                             <span class="flex1 tc">手机号</span>
-                             <span class="flex1 tc">层级</span>
-                             <!-- <span class="flex1 tc">手续费返佣</span> -->
-                             <span class="flex1 tr pr30">SGR返佣</span>
-                        </div>
-                        <div class="cor3 ft14 mt20 H500 overyscroll">
-                            <div class="flex alcenter mb20" v-for="(item,i) in inviteList" :key="i">
-                                <span class="flex1">{{item.thisid}}</span>
-                                <span class="flex1 tc">{{item.account}}</span>
-                                <span class="flex1 tc">{{item.lever}}</span>
-                                <!-- <span class="flex1 tc">{{item.inv_balance}}</span> -->
-                                <span class="flex1 tr pr30">{{item.sgr_balance}}</span>
-                            </div>
-                            <!-- <div class="mt20 tc cor2" v-show='hasMore'> 加载更多</div> -->
-                            <div class="mt20 tc cor2" v-show='!inviteList.length'>{{$t('invite.nomore')}}</div>
-                        </div>
-                    </div>
-                    <div class="mt20 ft14" v-if="tab == 2">
-                        <div class="flex alcenter cor2 ft14 bdb_eb pb10">
-                            <!-- <span class="flex1">{{$t('invite.account')}}</span>
-                            <span class="flex1 tc">{{$t('time')}}</span>
-                            <span class="flex1 tr pr30">{{$t('status')}}</span> -->
-                             <span class="flex1">UID</span>
-                             <span class="flex1 tc">手机号</span>
-                             <span class="flex1 tc">层级</span>
-                             <span class="flex1 tc">HXB持仓</span>
-                             <span class="flex1 tr pr30">SGR持仓</span>
-                        </div>
-                        <div class="cor3 ft14 mt20 H500 overyscroll">
-                            <div class="flex alcenter mb20" v-for="(item,i) in inviteList02" :key="i">
-                                <span class="flex1">{{item.thisid}}</span>
-                                <span class="flex1 tc">{{item.account}}</span>
-                                <span class="flex1 tc">{{item.lever}}</span>
-                                <span class="flex1 tc">{{item.hxb_balance}}</span>
-                                <span class="flex1 tr pr30">{{item.sgr_balance}}</span>
-                            </div>
-                            <!-- <div class="mt20 tc cor2" v-show='hasMore'> 加载更多</div> -->
-                            <div class="mt20 tc cor2" v-show='!inviteList.length'>{{$t('invite.nomore')}}</div>
-                        </div>
-                    </div>
-                </div>
-                <!-- <div class="mt40 cor3">
-                    <p class="ft22 ">{{$t('invite.rules')}}</p>
-                    <div class="mt20 ft12">
-                        <p class="mb10">1.{{$t('invite.tip1')}}</p>
-                        <p class="mb10">2.{{$t('invite.tip2_0')}}{{c_rate}}{{$t('invite.tip2_1')}}；</p>
-                        <p class="mb10">3.{{$t('invite.tip3')}}</p>
-                        <p class="mb10">4.{{$t('invite.tip4_0')}}{{c_name}}{{$t('invite.tip4_1')}}（{{c_name}}） {{$t('invite.tip4_2')}}。</p>
-                        <p class="mb10">5.{{$t('invite.tip5_0')}}{{c_name}}{{$t('invite.tip5_1')}}。</p>
-                    </div>
-                </div> -->
-            </div>
+            <!--<div class="bg-part plr20 pt20 pb50 mt20 radius8">-->
+                <!--&lt;!&ndash; <div class="">-->
+                    <!--<p class="ft22 cor3">{{$t('invite.link')}}</p>-->
+                    <!--<div class="mt20 flex alcenter cor2">-->
+                        <!--<div class="bd_d1 radius4 ptb15 flex alcenter flex1 mr30">-->
+                            <!--<div class="bdr_d1 flex1 tc">https://www.hxex.one/#/components/register?code={{invite_code}}</div>-->
+                            <!--<div class="tc  ft16 w25 curPer copy_link" @click="copy_link">{{$t('invite.share')}}</div>-->
+                        <!--</div>-->
+                        <!--<div class="w30 bd_d1 radius4 ptb15 flex alcenter">-->
+                            <!--<div class="bdr_d1 flex1 tc">{{$t('header.code')}}：{{invite_code}}</div>-->
+                            <!--<div class="tc  ft16 w20 curPer" @click="copy" id="copy">{{$t('account.copy')}}</div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</div> &ndash;&gt;-->
+                <!--<div class="">-->
+                    <!--<p class="ft22 cor3"><span :class="{'black':tab == 1,'bold':tab == 1}" class="curPer" @click="tab = 1">返佣记录</span><span class="ml20 curPer" :class="{'black':tab == 2,'bold':tab == 2}" @click="tab = 2">持仓统计</span></p>-->
+                    <!--<div class="flex alcenter ft14 mt10">-->
+                        <!--<span>层级：</span>-->
+                        <!--<el-select size="mini" v-model="lever" @change="changeLever">-->
+                            <!--<el-option :value="item.value" :label="item.name" v-for="(item,i) in leverList" :key="i"></el-option>-->
+                        <!--</el-select>-->
+                        <!--<span class="mr10" style="margin-left:50px;">用户账号：</span>-->
+                        <!--<el-input placeholder="用户手机号或邮箱" style="width:350px;" size="mini" @keyup.native="inp" v-model="account" class="input-with-select"><el-button slot="append" icon="el-icon-search"></el-button> </el-input>-->
+                    <!--</div>-->
+                    <!--<div class="mt20 ft14" v-if="tab == 1">-->
+                        <!--<div class="flex alcenter cor2 ft14 bdb_eb pb10">-->
+                            <!--&lt;!&ndash; <span class="flex1">{{$t('invite.account')}}</span>-->
+                            <!--<span class="flex1 tc">{{$t('time')}}</span>-->
+                            <!--<span class="flex1 tr pr30">{{$t('status')}}</span> &ndash;&gt;-->
+                             <!--<span class="flex1">UID</span>-->
+                             <!--<span class="flex1 tc">手机号</span>-->
+                             <!--<span class="flex1 tc">层级</span>-->
+                             <!--&lt;!&ndash; <span class="flex1 tc">手续费返佣</span> &ndash;&gt;-->
+                             <!--<span class="flex1 tr pr30">SGR返佣</span>-->
+                        <!--</div>-->
+                        <!--<div class="cor3 ft14 mt20 H500 overyscroll">-->
+                            <!--<div class="flex alcenter mb20" v-for="(item,i) in inviteList" :key="i">-->
+                                <!--<span class="flex1">{{item.thisid}}</span>-->
+                                <!--<span class="flex1 tc">{{item.account}}</span>-->
+                                <!--<span class="flex1 tc">{{item.lever}}</span>-->
+                                <!--&lt;!&ndash; <span class="flex1 tc">{{item.inv_balance}}</span> &ndash;&gt;-->
+                                <!--<span class="flex1 tr pr30">{{item.sgr_balance}}</span>-->
+                            <!--</div>-->
+                            <!--&lt;!&ndash; <div class="mt20 tc cor2" v-show='hasMore'> 加载更多</div> &ndash;&gt;-->
+                            <!--<div class="mt20 tc cor2" v-show='!inviteList.length'>{{$t('invite.nomore')}}</div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                    <!--<div class="mt20 ft14" v-if="tab == 2">-->
+                        <!--<div class="flex alcenter cor2 ft14 bdb_eb pb10">-->
+                            <!--&lt;!&ndash; <span class="flex1">{{$t('invite.account')}}</span>-->
+                            <!--<span class="flex1 tc">{{$t('time')}}</span>-->
+                            <!--<span class="flex1 tr pr30">{{$t('status')}}</span> &ndash;&gt;-->
+                             <!--<span class="flex1">UID</span>-->
+                             <!--<span class="flex1 tc">手机号</span>-->
+                             <!--<span class="flex1 tc">层级</span>-->
+                             <!--<span class="flex1 tc">HXB持仓</span>-->
+                             <!--<span class="flex1 tr pr30">SGR持仓</span>-->
+                        <!--</div>-->
+                        <!--<div class="cor3 ft14 mt20 H500 overyscroll">-->
+                            <!--<div class="flex alcenter mb20" v-for="(item,i) in inviteList02" :key="i">-->
+                                <!--<span class="flex1">{{item.thisid}}</span>-->
+                                <!--<span class="flex1 tc">{{item.account}}</span>-->
+                                <!--<span class="flex1 tc">{{item.lever}}</span>-->
+                                <!--<span class="flex1 tc">{{item.hxb_balance}}</span>-->
+                                <!--<span class="flex1 tr pr30">{{item.sgr_balance}}</span>-->
+                            <!--</div>-->
+                            <!--&lt;!&ndash; <div class="mt20 tc cor2" v-show='hasMore'> 加载更多</div> &ndash;&gt;-->
+                            <!--<div class="mt20 tc cor2" v-show='!inviteList.length'>{{$t('invite.nomore')}}</div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</div>-->
+                <!--&lt;!&ndash; <div class="mt40 cor3">-->
+                    <!--<p class="ft22 ">{{$t('invite.rules')}}</p>-->
+                    <!--<div class="mt20 ft12">-->
+                        <!--<p class="mb10">1.{{$t('invite.tip1')}}</p>-->
+                        <!--<p class="mb10">2.{{$t('invite.tip2_0')}}{{c_rate}}{{$t('invite.tip2_1')}}；</p>-->
+                        <!--<p class="mb10">3.{{$t('invite.tip3')}}</p>-->
+                        <!--<p class="mb10">4.{{$t('invite.tip4_0')}}{{c_name}}{{$t('invite.tip4_1')}}（{{c_name}}） {{$t('invite.tip4_2')}}。</p>-->
+                        <!--<p class="mb10">5.{{$t('invite.tip5_0')}}{{c_name}}{{$t('invite.tip5_1')}}。</p>-->
+                    <!--</div>-->
+                <!--</div> &ndash;&gt;-->
+            <!--</div>-->
 
         </div>
     </div>

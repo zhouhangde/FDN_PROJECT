@@ -91,7 +91,7 @@
                 <p class="ft12 mb5 flex alcenter s_ico">
                   <img src="../assets/images/success.png">照片清晰可见
                 </p>
-                <p class="ft12 flex alcenter s_ico">
+                <p class="ft12 flex  s_ico">
                   <img src="../assets/images/success.png">带有[SMAEX]的文字注释
                 </p>
               </div>

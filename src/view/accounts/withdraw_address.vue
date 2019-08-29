@@ -57,7 +57,7 @@
             <div class="ml20">{{$t('wAddress.addressList')}}</div>
           </div>
           <div class="contentBK 1 pdlr20 pdtb20 ft12 bgf8 rec bg-part">
-            <div class="flex alcenter">
+            <div class="flex ">
               <span class="flex1">{{$t('market.currency')}}</span>
               <span class="flex1 tc">{{$t('account.whaddress')}}</span>
               <span class="flex1 tc" v-if="show_m">{{$t('wAddress.memo')}}</span>
