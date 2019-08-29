@@ -1,7 +1,7 @@
 ﻿<template>
 
   <div id="index-footer" class="foot flex center around" style="padding:50px 80px;">
-  
+
     <ul class="ft12 foot_ul gray_a">
       <div>
         <li class="mb15 ft16 white">{{$t('footer.about')}}</li>
@@ -35,7 +35,7 @@
     <ul class="ft12 foot_ul gray_a">
       <div>
         <li class="mb15 ft16 white">{{$t('header.help')}}</li>
-        <li class="mb15 curPer"><a href="https://www.pgyer.com/f3F9" target="_blank">{{$t('footer.download')}}</a></li>
+        <li class="mb15 curPer"><a href="https://51gsc.com/app/7iUa" target="_blank">{{$t('footer.download')}}</a></li>
         <li class="mb15">
           <!-- <router-link :to="{path:'/components/noticeDetail',query:{id:47}}" class="mr15" tag="span">{{$t('footer.connect')}}</router-link> -->
           <router-link :to="{path:'/noticeHelp'}" tag="span">{{$t('footer.notice')}}</router-link>
@@ -44,7 +44,7 @@
           <!-- 新手帮助 -->
           <router-link :to="{path:'/newHelp'}" tag="span">{{$t('footer.nhelp')}}</router-link>
         </li>
-        <!-- <li class="mb15"> 
+        <!-- <li class="mb15">
           <router-link
             :to="{path:'/help',query:{id:3}}"
             tag="span"
@@ -113,10 +113,10 @@
         </li>
         <!-- <li class="mb15">
           <a
-            
+
             target="_blank"
             class="flex alcenter"
-            
+
           ><img src="../assets/images/sina_icon.png"><span class="ml5">微博</span></a>
         </li>
         <li class="mb15">
@@ -133,7 +133,7 @@
         </li>
         <li class="mb15">
           <a
-            
+
             target="_blank"
              class="flex alcenter"
           ><img src="../assets/images/twitter.png"><span class="ml5">Twitter</span></a>
@@ -176,16 +176,16 @@ export default {
                   that.$set(item,'wxImg',false)
                 })
                 this.link = res.data.message.link;
-            }            
+            }
           }
       })
     },
-    wxImg_over(i){    
-           this.img_link[i].wxImg = true;         
-       
+    wxImg_over(i){
+           this.img_link[i].wxImg = true;
+
     },
     wxImg_out(i){
-          this.img_link[i].wxImg = false;     
+          this.img_link[i].wxImg = false;
     }
   }
 };

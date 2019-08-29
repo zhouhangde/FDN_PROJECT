@@ -29,7 +29,7 @@
                             {{item.quotes.USD.percent_change_24h}}%
                         </p>
                     </div>
-                </div>   
+                </div>
                 <div class="swiper-pagination01"></div>
             </div>
             <div slot="button-prev" class="swiper-button-prev" tabindex="0" role="button" aria-label="Previous slide"></div>
@@ -48,13 +48,13 @@
       </ul>
       <div style="background:#fff!important;color:#333!important">
 
-     
+
         <div class="notice">
            <ul class="flex alcenter center notice_ul">
                <li v-for="item in noticeList" :key="item.id" class="fl notice_li" @click="$router.push({path:'components/noticeDetail',query:{id:item.thisid}})"><a class="notice_a ft14" :data-id='item.id'>{{item.title}}</a></li>
            </ul>
         </div>
-      
+
           <div class="coin-tab flex between alcenter">
             <ul class="coins">
               <li v-for="(coin,index) in quotation" :key="index" @click="nowCoin = coin.name" :class="{activeCoin:nowCoin == coin.name}">{{coin.name}}<span class='' v-if="nowCoin == coin.name"></span></li>
@@ -72,10 +72,10 @@
               <span>{{$t('home.high')}}</span>
                <span>{{$t('home.min')}}</span>
             <span>{{$t('home.volume')}}</span>
-            
+
             <span>{{$t('home.trade')}}</span>
           </div>
-          
+
           <ul class="list-con scroll" v-for="(item,index) in quotation" :key="index">
             <li v-for="(li,inde) in item.array" :key="inde" :data-name='li.currency_id+"/"+li.legal_id' v-if="(li.added&&nowCoin == $t('home.myMarkets')) ||li.legal_name == nowCoin">
             <!-- <div v-if="search(li.currency_name)&&testItem(li.legal_name,li.added)"> -->
@@ -142,7 +142,7 @@
                 <p class="p0"></p>
                 <span>IPhone</span>
                 <div class="codebox tc ft12">
-                  <img src="../assets/images/appImg.png" alt="">
+                  <img src="../assets/images/app.png" alt="">
                   <span>Iphone</span>
                 </div>
               </li>
@@ -150,7 +150,7 @@
                 <p class="p1"></p>
                 <span>{{$t('home.android')}}</span>
                 <div class="codebox tc ft12">
-                  <img src="../assets/images/appImg.png" alt="">
+                  <img src="../assets/images/app.png" alt="">
                   <span>{{$t('home.android')}}</span>
                 </div>
               </li>
@@ -179,7 +179,7 @@
             <div class="tabhang">
                 <div class="tabul">
                     <ul class="clearfix">
-                        <li :class="{active:index==curCoinTab}" v-for="(tab,index) in quotation" :key="index" @click="getCurrent(index)" >{{tab.name}}</li> 
+                        <li :class="{active:index==curCoinTab}" v-for="(tab,index) in quotation" :key="index" @click="getCurrent(index)" >{{tab.name}}</li>
                     </ul>
                 </div>
                 <div class="tabtable">
@@ -229,7 +229,7 @@
                           </li>
                       </ul>
                     </div>
-                    
+
                 </div>
             </div>
         </div>
@@ -252,7 +252,7 @@
                <p class="ft16 bold mb10">{{$t('home.c7')}}</p>
                 <p class="ft16 bold mb10">{{$t('home.c8')}}</p>
             </div>
-            
+
         </div>
         <div class="content01 flex alcenter grayBg center" style="background:#f3f3f3;">
             <div class="text01 mr100">
@@ -270,7 +270,7 @@
               <h1 class="ft26 bold gray9 mb30">{{$t('home.c14')}}</h1>
               <p class="ft16 bold mb10 tr">{{$t('home.c15')}}</p>
             </div>
-            
+
         </div>
         <div class="content01 flex alcenter grayBg center bg02">
             <div class="text01 mr100">
@@ -311,7 +311,7 @@ import "@/assets/style/index.css";
 import Swiper from "swiper";
 import "swiper/dist/css/swiper.min.css";
 import indexHeader from "@/view/indexHeader";
-import homeLogin from "@/view/homeLogin"; 
+import homeLogin from "@/view/homeLogin";
 // var echarts = require("echarts");
 export default {
   name: "homeContent",
@@ -355,7 +355,7 @@ export default {
       this.getQuotation()
     }
     this.account_number = window.localStorage.getItem("accountNum") || "";
-    
+
     eventBus.$on("loginSuccess", function() {
       location.reload();
     });
@@ -374,7 +374,7 @@ export default {
       observer: true, //修改swiper自己或子元素时，自动初始化swiper
       observeParents: true //修改swiper的父元素时，自动初始化swiper
     });
-    
+
     // this.setChart();
     this.$http({
       url: '/api/' + "news/lunbo",
@@ -397,7 +397,7 @@ export default {
           // }
         }
       })
-     
+
     //  eventBus.$on('toNew', function (data) {
     //   //console.log(data);
     //   if(data){
@@ -442,10 +442,10 @@ export default {
     //   } else {
     //     return true;
     //   }
-      
+
     // },
     // testItem(name,added){
-      
+
     //   if(this.showAdd){
     //     return added
     //   } else {
@@ -468,7 +468,7 @@ export default {
       var that = this;
        // 打开一个 web socket
         var ws = new WebSocket("wss://ws.smaex.io/ws");
-        
+
         ws.onopen = function()
         {
           // Web Socket 已连接上，使用 send() 方法发送数据
@@ -477,9 +477,9 @@ export default {
           //console.log(sendData)
           ws.send(sendData);
         };
-        
-        ws.onmessage = function (evt) 
-        { 
+
+        ws.onmessage = function (evt)
+        {
           var msg = JSON.parse(evt.data);
           if(msg.type == 'daymarket'){
             //涨幅榜数据推送
@@ -506,9 +506,9 @@ export default {
            })
           }
         };
-        
+
         ws.onclose = function()
-        { 
+        {
           // 关闭 websocket
         };
     },
@@ -523,14 +523,14 @@ export default {
         if(res.data.type == 'ok'){
           var list = res.data.message;
             this.myAdd = list;
-            
+
             this.getQuotation();
         }
       })
       } else {
         if(this.$i18n.locale == 'zh'){
 
-          layer.msg('请先登录') 
+          layer.msg('请先登录')
         } else {
           layer.msg('Please sign in')
         }
@@ -645,7 +645,7 @@ export default {
         // $("li[data-name='" + cname + "']")
         //   .find(".today span")
         //   .html(toprice);
-        
+
           $("li[data-name='" + cname + "']")
           .find(".high_price")
           .html((msg.high_price-0).toFixed(8));
@@ -667,7 +667,7 @@ export default {
       }
     },
     setCurrent(index, inde) {
-      
+
       let msg = this.quotation[index];
       let quo = msg.array[inde];
       var tradeData = {
@@ -705,7 +705,7 @@ export default {
             })
             //console.log(msg)
           }
-          
+
           this.quotation = res.data.message;
           //console.log(this.quotation)
           this.nowCoin = this.quotation[0].name;
@@ -971,7 +971,7 @@ export default {
         background: #f1f6ff;
       }
       .high_blue{
-          color:#563BD1; 
+          color:#563BD1;
         }
         .low_blue{
           color: #8D75F7;

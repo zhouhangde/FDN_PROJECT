@@ -1,7 +1,7 @@
 <template>
     <div class="mt45">
        <div>
-           <img class="bg_banners" src="../assets/images/crow_banner.png">
+           <img class="bg_banners" src="../assets/images/labs.png">
        </div>
        <!--列表-->
        <ul class="w90 ul01 flex">
