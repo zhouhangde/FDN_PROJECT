@@ -21,12 +21,12 @@
                       </div>
                       </div>
                       <!--验证码-->
-                    
+
                       <div class="register-input bdr-part" v-if="codeType == 1 || codeType == 2">
                           <span class="register-item">{{$t('code')}}</span>
                           <div class="flex">
                       <input type="text" v-model="code" class="codes" id="code" style="border-right:none">
-                      
+
                       <button type='button' class="code-btn redBg curPer" @click="sendCode">{{$t('code')}}</button>
                       </div>
                   </div>
@@ -43,13 +43,13 @@
                       <button v-if="!show" class="register-button curPer redBg " @click="login02">{{$t('header.in')}}</button>
                   </div>
                   <p v-if="show" class="mt10 ft14 go_register">{{$t('register01.noAccount')}}<router-link :to="{ name: 'register'}" class="zhuce">{{$t('registers')}}</router-link></p>
-                  
+
                   </div>
-                    
+
                 </div>
                 <div class="global-ad">
                   <div class="qrcode">
-                    <img src="../assets/images/appImg.png" alt="">
+                    <img src="../assets/images/app_down.png" alt="">
                     <!--<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29 29">
                       <path
                         d="M0 0h7v7h-7zM10 0h1v2h-1zM12 0h4v1h2v-1h3v3h-1v-2h-1v1h-3v2h1v-1h1v1h1v-1h1v2h-2v1h-1v-1h-2v-1h-1v-1h1v-1h-1v1h-1v1h-1v-2h1v-1h-1zM22 0h7v7h-7zM1 1v5h5v-5zM8 1h1v1h-1zM23 1v5h5v-5zM2 2h3v3h-3zM24 2h3v3h-3zM8 3h3v1h-1v2h-1v1h-1v-2h1v-1h-1zM11 5h2v2h-1v-1h-1zM10 6h1v1h1v2h-1v-1h-1v1h-2v1h-1v-1h-1v-1h3v-1h1zM14 6h1v2h-1zM16 6h1v2h-1zM18 6h1v2h1v1h1v-1h1v1h1v-1h1v1h1v2h1v1h1v1h-2v-1h-1v1h1v1h2v1h-3v-1h-2v1h1v1h-3v2h-2v1h-2v2h-2v-1h1v-1h-1v1h-1v1h-1v-2h1v-1h-1v-1h3v1h1v-1h1v-1h1v1h1v-1h-1v-1h2v-1h-2v-1h1v-2h1v1h1v1h2v-1h-1v-2h-4v1h-1v1h-1v-1h-2v1h-1v1h-1v-2h1v-1h-1v-1h4v1h1v-2h1zM20 6h1v1h-1zM0 8h5v1h-3v1h-2zM25 8h1v1h-1zM27 8h1v1h-1zM5 9h1v1h1v1h-2zM10 9h1v2h-1zM28 9h1v1h-1zM8 10h1v2h2v1h-2v1h-1zM0 11h4v1h-1v1h1v1h-1v2h1v-1h1v1h2v1h-2v1h-1v-1h-1v1h-2v3h-1v-4h2v-1h-2v-1h1v-1h1v-1h-1v-1h-1zM27 11h1v1h-1zM4 12h3v1h-3zM14 12h1v1h-1zM17 12h1v1h-1zM0 13h1v1h-1zM28 13h1v1h-1zM6 14h2v1h1v-1h4v1h-1v2h-1v1h-1v-1h-1v-1h-2v-1h-1zM15 14h1v1h1v1h-1v1h-1v-1h-1v-1h1zM27 15h1v1h-1zM25 16h2v3h-1v-2h-1zM7 17h2v1h-1v1h1v1h-1v1h-2v-1h1v-1h-2v-1h2zM21 17h4v1h-2v1h-2v1h2v-1h1v1h1v1h1v-1h1v-1h1v1h1v2h-2v1h-2v2h-3v1h1v1h1v-1h1v-1h1v-1h1v-1h2v1h-1v1h1v1h-1v2h-1v-1h-1v1h-2v1h-3v-1h1v-1h-1v-1h-3v1h-1v-1h-1v-1h1v-1h1v1h2v-1h-1v-2h1v-1h-1v-2h1v-1h1zM28 17h1v1h-1zM3 18h1v2h-1v1h-1v-2h1zM4 20h1v1h-1zM17 20h1v1h-1zM8 21h2v1h-1v1h-1zM16 21h1v1h1v1h-1v1h-1v-1h-1v-1h1zM21 21v3h3v-3zM0 22h7v7h-7zM11 22h2v1h-1v2h-1v-1h-1v-1h1zM22 22h1v1h-1zM1 23v5h5v-5zM14 23h1v1h-1zM2 24h3v3h-3zM8 24h2v1h-1v1h2v1h-1v1h-1v1h-1zM12 25h3v1h1v1h1v1h-2v-1h-1v1h-1v1h-1v-2h1v-1h-1zM18 27h1v1h-1zM20 27h1v1h-1zM10 28h1v1h-1zM14 28h1v1h-1zM17 28h1v1h-1zM19 28h1v1h-1zM26 28h1v1h-1z"></path>
@@ -107,7 +107,7 @@ export default {
         //console.log(this.account_number)
         if(this.account_number){
            this.password = localStorage.getItem('password');
-        }  
+        }
     }
   },
   methods: {
@@ -123,15 +123,15 @@ export default {
 
       }).then(data => {
        this.codeImg = data;
-        
+
       })
     },
     userInfo(){
       this.$http({
           url: '/api/'+'user/info',
           method:'get',
-          data:{},  
-          headers: {'Authorization':  localStorage.getItem('token')},    
+          data:{},
+          headers: {'Authorization':  localStorage.getItem('token')},
       }).then(res=>{
           // //console.log(res);
           if(res.data.type == 'ok'){
@@ -140,8 +140,8 @@ export default {
           localStorage.setItem('extension_code',res.data.message.invite_code);
           }
       }).catch(error=>{
-          
-      })                       
+
+      })
     },
     //发送验证码
     sendCode(e){
@@ -190,7 +190,7 @@ export default {
       })
     },
     login() {
-      
+
       let account_number = this.$utils.trim(this.account_number);
       let password = this.$utils.trim(this.password);
       if (this.account_number.length == "") {
@@ -232,7 +232,7 @@ export default {
             setTimeout(() => {
                this.$router.push("/");
             }, 1000);
-           
+
           } else if(res.type == '888') {
               this.show = false;
              if(res.message == '1'){
@@ -255,13 +255,13 @@ export default {
                   if(msg.is_auth ==0){
                     setTimeout(() => {
                         this.$router.push("/userCenter/auth");
-                      }, 1000); 
+                      }, 1000);
                   }else{
                     window.localStorage.setItem('alert','alert')
                     setTimeout(() => {
                         this.$router.push({name:"homeContent",params:{msg:'alert'}});
                       }, 1000);
-                    
+
                   }
                 }
               })
@@ -316,7 +316,7 @@ export default {
                   if(msg.is_auth ==0){
                     setTimeout(() => {
                         this.$router.push("/userCenter/auth");
-                      }, 1000); 
+                      }, 1000);
                   }else{
                     window.localStorage.setItem('alert','alert')
                     setTimeout(() => {
@@ -326,7 +326,7 @@ export default {
                 }
               })
 
-            
+
           }else{
             layer.msg(res.message)
           }
