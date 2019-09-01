@@ -122,7 +122,7 @@
 			},
 			//下载
 			upload(){
-               window.location.href = 'https://www.pgyer.com/f3F9'
+               window.location.href = 'https://51gsc.com/app/UHNo'
 			},
 			checkPt(){
 				let sUserAgent = navigator.userAgent.toLowerCase();
